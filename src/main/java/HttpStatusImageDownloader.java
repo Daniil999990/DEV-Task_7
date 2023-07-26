@@ -24,10 +24,10 @@ public class HttpStatusImageDownloader {
                 while ((bytesRead = in.read(buffer)) != -1) {
                     out.write(buffer, 0, bytesRead);
                 }
-                System.out.println("Зображення успішно завантажено в папку /Users/daniil/IdeaProjects/DEV-Task_7/src/main/resources");
+                System.out.println("Uploaded to src/main/resources");
             }
         } catch (IOException e) {
-            throw new Exception("Не вдалося завантажити зображення: " + e.getMessage());
+            throw new Exception("The image could not be loaded: " + e.getMessage());
         }
     }
 }
